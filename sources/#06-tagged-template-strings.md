@@ -5,10 +5,11 @@ var a = 5;
 var b = 10;
 
 function tag(strings, ...values) {
-  console.log(strings[0]); // "Hello "
-  console.log(strings[1]); // " world "
-  console.log(values[0]);  // 15
-  console.log(values[1]);  // 50
+  const log = console.log;
+  log(strings[0]); // "Hello "
+  log(strings[1]); // " world "
+  log(values[0]);  // 15
+  log(values[1]);  // 50
 
   return "Bazinga!";
 }
